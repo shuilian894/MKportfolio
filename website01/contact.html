@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- reset.css modern-css-reset -->
+    <linkrel="stylesheet"href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+    <!-- stylecss -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="stylesheet" href="https://use.typekit.net/zwk4tjl.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zwk4tjl.css">
+
+    <!-- js code　fade-in -->
+    <script type='text/javascript'>
+      function load_effect() {
+        var element = document.getElementsByClassName('load-fade');
+        if(!element) return; // 要素がない場合は終了
+        
+        for(var i = 0; i < element.length; i++) { 
+          element[i].classList.add('is-show');
+        }
+      }
+      setTimeout(load_effect, 600); // 600ミリ秒経過後に実行
+      </script>
+      <!-- jscode scrollup -->
+      <script type='text/javascript'>
+        function scroll_effect() {
+          var element = document.getElementsByClassName('scroll-up');
+          if(!element) return;
+                              
+          var scrollY = window.pageYOffset;
+          var windowH = window.innerHeight;
+          var showTiming = 200; // 要素を表示するタイミング
+          for(var i = 0; i < element.length; i++) { 
+            var elemClientRect = element[i].getBoundingClientRect(); 
+            var elemY = scrollY + elemClientRect.top; 
+            if(scrollY > elemY - windowH + showTiming) {
+              element[i].classList.add('is-show');
+            }
+          }
+        }
+        window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+        </script>
+        <!--js無効化対策code  -->
+        <noscript>
+          <style>
+            .load-fade, .scroll-up {
+              opacity: 1;
+              visibility: visible;
+              transform: translateY(0px);
+            }
+          </style>
+        </noscript>
+        <!-- font-ohsam cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       
+     
+    
+
+    <title>MK Portfolio-contact</title>
+     <!-- ファビコン -->
+    <!--<link rel="icon" href="/favicon.ico" id="favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="images/icon.png">教科書-->
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+
+    
+      
+
+</head>
+
+
+<body>
+              <!--contact section  -->
+  <div id="contact" class="big-bg">
+    <header class="page-header wrapper">
+
+           <h1><a href="#"> <span>MK</span> portfolio <span>.</span> </a></h1> 
+              <!-- ロゴとナビゲーションボタン -->
+          <nav>
+            <ul class="main-nav">
+              <li><a href="index.html#about">about</a> </li>
+              <li><a href="index.html#works">works</a></li>
+              <li><a href="index.html#home">home</a></li>
+            
+               <!-- ナビゲーションボタン -->
+            
+            </ul>
+          </nav> 
+      
+                 <!-- homecontents section -->
+               <!-- 雪 -->
+            <div class="snow">●</div>
+            <div class="snow snow2nd">●</div>  
+
+    </header>
+              
+        
+    
+        <!--contactform -->
+
+     
+    <div class="wrapper">
+      <div class="scroll-up"><h2 class="page-title">contact</h2></div>
+       
+      
+         <form action="#">
+           <div>
+             <label for="name">name</label>
+             <input type="text" id="name" name="your-name">
+           </div>
+
+           <div>
+             <label for="e-mail">mail <address></address></label>
+             <input type="email" id="email" name="your-email">
+           </div>
+
+           <div>
+             <label for="message">message</label>
+             <textarea id="message" name="your-message"></textarea>
+           </div>
+
+             <!--<input type="submit" class="button" value="send">-->
+           <a href="mailto:faithfull0303@icloud.com" class="btn-s">send</a>
+         </form>
+        
+     </div>  <!--wrspper-->
+
+             <!-- footer -->
+
+      <footer>
+        <div class="wrapper">
+      
+          <p><span>MK</span>Portfolio<span>.</span></p>
+      
+          <div class="social">
+
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.Twitter.com"><i class="fab fa-twitter"></i></a>
+      
+          </div>
+
+             <p class="end">CopyRight@MKPortfolio .</p>
+       
+        </div> <!--wrapper-->
+      </footer>
+
+  </div><!--#contact-->
+
+ 
+
+
+    
+    
+    
+</body>
+</html>
